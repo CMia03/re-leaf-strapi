@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_email_categories",
+  "info": {
+    "displayName": "email_category"
+  },
+  "options": {},
+  "attributes": {
+    "emails": {
+      "type": "email"
+    }
+  }
+}

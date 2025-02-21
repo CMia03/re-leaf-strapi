@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_email_adresses",
+  "info": {
+    "displayName": "email_adresse"
+  },
+  "options": {},
+  "attributes": {
+    "emails": {
+      "type": "email"
+    }
+  }
+}

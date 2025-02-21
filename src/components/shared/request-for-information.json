@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_request_for_informations",
+  "info": {
+    "displayName": "Request_for_information",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "emails": {
+      "type": "email"
+    }
+  }
+}

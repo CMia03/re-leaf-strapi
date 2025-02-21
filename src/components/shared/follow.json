@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_follows",
+  "info": {
+    "displayName": "follow"
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    }
+  }
+}

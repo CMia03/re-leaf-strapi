@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_services",
+  "info": {
+    "singularName": "our-service",
+    "pluralName": "our-services",
+    "displayName": "Nos Services",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "engine_drain": {
+      "displayName": "vidange-moteur",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.vidange-moteur"
+    },
+    "tire_inflation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.vidange-moteur"
+    },
+    "balancing_assembly": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.vidange-moteur"
+    },
+    "filter_change": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.vidange-moteur"
+    },
+    "top_up_engine_oil": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.vidange-moteur"
+    }
+  }
+}

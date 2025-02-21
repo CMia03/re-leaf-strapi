@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_schedules",
+  "info": {
+    "displayName": "schedule"
+  },
+  "options": {},
+  "attributes": {
+    "days": {
+      "type": "string"
+    },
+    "saturday": {
+      "type": "string"
+    },
+    "sunday": {
+      "type": "string"
+    }
+  }
+}

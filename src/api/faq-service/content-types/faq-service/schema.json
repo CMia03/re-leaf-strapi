@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_services",
+  "info": {
+    "singularName": "faq-service",
+    "pluralName": "faq-services",
+    "displayName": "Faq",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    }
+  }
+}

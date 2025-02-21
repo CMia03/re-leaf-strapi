@@ -4,7 +4,7 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About",
+    "displayName": "A propos",
     "description": "Write about yourself and the content you create"
   },
   "options": {
@@ -12,12 +12,53 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "about_us": {
+      "type": "text"
+    },
+    "vision": {
+      "type": "text"
+    },
+    "missions": {
+      "type": "text"
+    },
+    "expertise_title": {
       "type": "string"
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+    "product_title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "client_service": {
+      "type": "string"
+    },
+    "entretien_service": {
+      "type": "string"
+    },
+    "pneumatique_advisor": {
+      "type": "string"
+    },
+    "specialist_oil": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "day": {
+      "displayName": "schedule",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.schedule"
+    },
+    "follow": {
+      "displayName": "suivez-nous",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.suivez-nous"
     }
   }
 }

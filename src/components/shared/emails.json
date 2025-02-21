@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_emails",
+  "info": {
+    "displayName": "emails",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Emails": {
+      "displayName": "email_adresse",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.email-adresse"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_histories",
+  "info": {
+    "singularName": "our-history",
+    "pluralName": "our-histories",
+    "displayName": "Notre parcours",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "years": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

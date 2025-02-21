@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages_coms",
+  "info": {
+    "singularName": "messages-com",
+    "pluralName": "messages-coms",
+    "displayName": "Messages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sender": {
+      "type": "email"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "entity": {
+      "type": "string"
+    }
+  }
+}

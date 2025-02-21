@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "email_adresses",
+  "info": {
+    "singularName": "email-adresse",
+    "pluralName": "email-adresses",
+    "displayName": "Emails"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Request_for_information": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.request-for-information"
+    },
+    "Quotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.request-for-information"
+    },
+    "After_sales_service": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.request-for-information"
+    },
+    "Become_reseller": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.request-for-information"
+    },
+    "Other": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.request-for-information"
+    },
+    "Making_an_appointment": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.request-for-information"
+    }
+  }
+}

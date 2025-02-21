@@ -13,15 +13,17 @@
   "pluginOptions": {},
   "attributes": {
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "category_id": {
+    "subcategory_id": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::category.category"
+      "target": "api::subcategory.subcategory"
     },
     "brand_id": {
       "type": "relation",
@@ -34,13 +36,16 @@
         "voiture",
         "moto",
         "camion"
-      ]
+      ],
+      "required": true
     },
     "description": {
       "type": "richtext"
     },
     "availability": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true,
+      "required": true
     },
     "technical_info": {
       "type": "richtext"
@@ -48,24 +53,37 @@
     "cover_image": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
-        "files",
-        "videos",
-        "audios"
+        "files"
       ]
     },
     "images": {
       "type": "media",
       "multiple": true,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
-        "files",
-        "videos",
-        "audios"
+        "files"
       ]
+    },
+    "score": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "max": 10,
+      "min": 0
+    },
+    "feature": {
+      "type": "string",
+      "maxLength": 40,
+      "required": true
+    },
+    "on_promotion": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_suivez_nous",
+  "info": {
+    "displayName": "suivez-nous",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "instagram": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.facebook"
+    },
+    "facebook": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.instagram"
+    }
+  }
+}

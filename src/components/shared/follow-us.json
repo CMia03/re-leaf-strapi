@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_follow_uses",
+  "info": {
+    "displayName": "follow-us",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.facebook"
+    }
+  }
+}
