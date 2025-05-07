@@ -861,6 +861,13 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     on_promotion: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    price: Schema.Attribute.Decimal &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
     publishedAt: Schema.Attribute.DateTime;
     score: Schema.Attribute.Integer &
       Schema.Attribute.Required &
@@ -872,6 +879,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
         number
       > &
       Schema.Attribute.DefaultTo<0>;
+    size: Schema.Attribute.Decimal;
     slug: Schema.Attribute.UID & Schema.Attribute.Required;
     subcategory_id: Schema.Attribute.Relation<
       'oneToOne',
@@ -883,6 +891,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     vehicle_type: Schema.Attribute.Enumeration<['voiture', 'moto', 'camion']> &
       Schema.Attribute.Required;
+    weight: Schema.Attribute.Float;
   };
 }
 

@@ -84,6 +84,16 @@
       "type": "boolean",
       "default": false,
       "required": false
+    },
+    "price": {
+      "min": 0,
+      "type": "decimal"
+    },
+    "weight": {
+      "type": "float"
+    },
+    "size": {
+      "type": "decimal"
     }
   }
 }
