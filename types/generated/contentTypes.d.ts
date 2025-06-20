@@ -429,6 +429,7 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
         'Service client',
       ]
     >;
+    category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
     content: Schema.Attribute.RichText;
     content_t: Schema.Attribute.Enumeration<
       [
@@ -498,6 +499,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    articles: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -515,6 +517,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID;
+    type: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -841,7 +844,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<true>;
     brand_id: Schema.Attribute.Relation<'oneToOne', 'api::brand.brand'>;
-    category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
+    category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
     cover_image: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;

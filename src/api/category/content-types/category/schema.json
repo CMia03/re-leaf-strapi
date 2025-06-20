@@ -38,10 +38,20 @@
         "files"
       ]
     },
+    "type": {
+      "type": "text"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "category"
+    },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::product.product"
+      "target": "api::product.product",
+      "mappedBy": "category"
     }
   }
 }
