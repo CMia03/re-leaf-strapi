@@ -38,9 +38,6 @@
         "files"
       ]
     },
-    "type": {
-      "type": "text"
-    },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
@@ -52,6 +49,13 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "category"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Blog",
+        "Products"
+      ]
     }
   }
 }
